@@ -22,8 +22,6 @@
         <h1>KI-AG</h1>
     </div>
 
-   
-
     <div class="video-field">
         <video width="600" controls>
             <source src="dein-video.mp4" type="video/mp4">
@@ -31,8 +29,19 @@
         </video>
     </div>
 
+    <div id="about"></div>
 
-    <div id="about">
+    <div class="bottom-container">
+        <div class="text-field">
+            <p>Hier kannst du mehr über uns erfahren!</p>
+        </div>
+        <div class="bottom-section">
+            <p style="font-size: 32px; font-weight: bold;">Hast du Lust?</p>
+            <button onclick="alert('Willkommen!')">Mach mit!</button>
+        </div>
+        <div class="image-field">
+            <img src="example-image.jpg" alt="Beispielbild">
+        </div>
     </div>
 
     <style>
@@ -42,12 +51,12 @@
             padding: 20px;
         }
 
-        /* Stil für das Textfeld */
         .text-field {
-            width: 45%; /* 45% der Breite für den Textbereich */
+            width: 30%;
             padding: 20px;
             background-color: #f4f4f4;
             border-radius: 8px;
+            text-align: center;
         }
 
         .text-field h2 {
@@ -60,9 +69,8 @@
             color: #555;
         }
 
-         /* Stil für das Videofeld */
-         .video-field {
-            width: 45%; /* 45% der Breite für das Video */
+        .video-field {
+            width: 45%;
             padding: 70px;
             background-color: #f4f4f4;
             border-radius: 20px;
@@ -74,26 +82,61 @@
         }
 
         video {
-            width: 100%; /* Video füllt die Breite des Containers */
+            width: 100%;
             border-radius: 8px;
         }
 
-
-
-        /* Zentrieren der Überschrift auf der Seite */
         .centered-heading {
             display: flex;
-            justify-content: center; /* Horizontales Zentrieren */
-            align-items: center; /* Vertikales Zentrieren */
-            height: 20vh; /* Volle Höhe des Viewports */
-            text-align: center; /* Text zentrieren */
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            text-align: center;
         }
 
-        /* Stil für die Überschrift "KI-AG" */
         .centered-heading h1 {
-            font-size: 80px; /* Sehr große Schriftgröße */
-            font-weight: bold; /* Fettgedruckt */
-            color: #333; /* Textfarbe */
+            font-size: 80px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .bottom-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 500px;
+            padding: 20px;
+        }
+
+        .bottom-section {
+            text-align: center;
+            font-size: 24px;
+            width: 30%;
+        }
+
+        .bottom-section button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .bottom-section button:hover {
+            background-color: #0056b3;
+        }
+
+        .image-field {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-field img {
+            width: 100%;
+            border-radius: 8px;
         }
     </style>
 </body>
