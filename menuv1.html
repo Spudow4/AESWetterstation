@@ -11,10 +11,123 @@
     <nav>
         <img src="AESLogo.png" alt="Logo">
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="menuv1.html">Home</a></li>
             <li><a href="#about">Über uns</a></li>
         </ul>
-    </nav>
+    </nav> 
+
+    <!-- Add Orbitron font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Apply Orbitron font globally */
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* Ensures the entire layout stays centered and aligned properly */
+        .centered-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            text-align: center;
+            margin-bottom: 30px; /* Space below the "KI-AG" heading */
+        }
+
+        .centered-heading h1 {
+            font-size: 80px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .video-field {
+            width: 45%;
+            padding: 70px;
+            background-color: #f4f4f4;
+            border-radius: 20px;
+            margin-bottom: 30px; /* Space below the video */
+        }
+
+        .video-field h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Main container for the bottom section ("Hast du Lust?" + content) */
+        .hast-du-lust {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* Center content vertically */
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 40px;  /* Space below the bottom section */
+        }
+
+        /* "Hast du Lust?" text centered at the top */
+        .hast-du-lust p {
+            text-align: center;
+            margin-bottom: 40px;  /* Space below "Hast du Lust?" text */
+            margin-top: 10%;
+        }
+
+        /* Main content row (text and photo side by side) */
+        .content-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 4000px;  /* Max width of the content row */
+            margin-bottom: 30px;  /* Space below the row */
+        }
+
+        /* Left text container */
+        .text-field {
+            width: 30%;  /* Adjust width of the text */
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            text-align: left;
+            line-height: 35px;
+        }
+
+        /* Right image container */
+        .image-field {
+            width: 45%;  /* Adjust width of the image */
+            text-align: center;
+            margin-left: 220px;  /* Adds space between the image and text */
+        }
+
+        .image-field img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Button container centered below the content */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;  /* Space above the button */
+        }
+
+        .button-container button {
+            font-size: 20px;
+            padding: 10px 200px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -31,113 +144,29 @@
 
     <div id="about"></div>
 
-    <div class="bottom-container">
-        <div class="text-field">
-            <p>Hier kannst du mehr über uns erfahren!</p>
+    <!-- "Hast du Lust?" section now contains text, photo, and button -->
+    <div class="hast-du-lust">
+        <p style="font-size: 32px; font-weight: bold;">Hast du Lust?</p>
+
+        <!-- Main content row (text and photo side by side) -->
+        <div class="content-row">
+            <!-- Left side text -->
+            <div class="text-field">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <!-- Right side image -->
+            <div class="image-field">
+                <img src="kreis.png" alt="Beispielbild">
+            </div>
         </div>
-        <div class="bottom-section">
-            <p style="font-size: 32px; font-weight: bold;">Hast du Lust?</p>
-            <button onclick="alert('Willkommen!')">Mach mit!</button>
-        </div>
-        <div class="image-field">
-            <img src="example-image.jpg" alt="Beispielbild">
+
+        <!-- Button below everything -->
+        <div class="button-container">
+            <button onclick="window.location.href='Test.html'">Mach mit!</button>
         </div>
     </div>
 
-    <style>
-        .content-container {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .text-field {
-            width: 30%;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .text-field h2 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        .text-field p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        .video-field {
-            width: 45%;
-            padding: 70px;
-            background-color: #f4f4f4;
-            border-radius: 20px;
-        }
-
-        .video-field h2 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        video {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .centered-heading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 20vh;
-            text-align: center;
-        }
-
-        .centered-heading h1 {
-            font-size: 80px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .bottom-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 500px;
-            padding: 20px;
-        }
-
-        .bottom-section {
-            text-align: center;
-            font-size: 24px;
-            width: 30%;
-        }
-
-        .bottom-section button {
-            font-size: 20px;
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .bottom-section button:hover {
-            background-color: #0056b3;
-        }
-
-        .image-field {
-            width: 30%;
-            text-align: center;
-        }
-
-        .image-field img {
-            width: 100%;
-            border-radius: 8px;
-        }
-    </style>
 </body>
 </html>
+
